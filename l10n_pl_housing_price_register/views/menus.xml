@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Leszek Szczepkowski
+     License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl). -->
+<odoo>
+    <menuitem
+        id="menu_hpr_root"
+        name="Price register"
+        sequence="57"
+        web_icon="l10n_pl_housing_price_register,static/description/icon.png"
+        groups="l10n_pl_housing_price_register.group_hpr_user"
+    />
+    <menuitem
+        id="menu_hpr_project"
+        name="Projects"
+        parent="menu_hpr_root"
+        action="hpr_project_action"
+        sequence="10"
+    />
+    <menuitem
+        id="menu_hpr_stage"
+        name="Stages"
+        parent="menu_hpr_root"
+        action="hpr_stage_action"
+        sequence="20"
+    />
+    <menuitem
+        id="menu_hpr_unit"
+        name="Units and prices"
+        parent="menu_hpr_root"
+        action="hpr_unit_action"
+        sequence="30"
+    />
+    <menuitem
+        id="menu_hpr_file"
+        name="Daily files"
+        parent="menu_hpr_root"
+        action="hpr_file_action"
+        sequence="40"
+    />
+    <menuitem
+        id="menu_hpr_price"
+        name="Approved prices"
+        parent="menu_hpr_root"
+        action="hpr_price_action"
+        sequence="50"
+    />
+    <menuitem
+        id="menu_hpr_developer"
+        name="Developers"
+        parent="menu_hpr_root"
+        action="hpr_developer_action"
+        sequence="90"
+    />
+</odoo>

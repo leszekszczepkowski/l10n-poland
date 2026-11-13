@@ -1,0 +1,11 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hpr_developer_user,hpr developer user,model_l10n_pl_hpr_developer,group_hpr_user,1,0,0,0
+access_hpr_developer_manager,hpr developer manager,model_l10n_pl_hpr_developer,group_hpr_manager,1,1,1,0
+access_hpr_project_user,hpr project user,model_l10n_pl_hpr_project,group_hpr_user,1,0,0,0
+access_hpr_project_manager,hpr project manager,model_l10n_pl_hpr_project,group_hpr_manager,1,1,1,0
+access_hpr_stage_user,hpr stage user,model_l10n_pl_hpr_stage,group_hpr_user,1,0,0,0
+access_hpr_stage_manager,hpr stage manager,model_l10n_pl_hpr_stage,group_hpr_manager,1,1,1,1
+access_hpr_unit_user,hpr unit user,model_l10n_pl_hpr_unit,group_hpr_user,1,0,0,0
+access_hpr_unit_manager,hpr unit manager,model_l10n_pl_hpr_unit,group_hpr_manager,1,1,1,1
+access_hpr_price_user,hpr price user,model_l10n_pl_hpr_price,group_hpr_user,1,0,0,0
+access_hpr_file_user,hpr file user,model_l10n_pl_hpr_file,group_hpr_user,1,0,0,0

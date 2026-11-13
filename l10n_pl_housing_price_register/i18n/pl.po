@@ -1,0 +1,1960 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-12 23:12+0000\n"
+"PO-Revision-Date: 2026-11-12 23:12+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_approval_mixin.py:0
+msgid ""
+"%(field)s: the text cannot start with = + - or @ (spreadsheets would read it"
+" as a formula)."
+msgstr ""
+"%(field)s: tekst nie może zaczynać się od znaku = + - ani @ (arkusz "
+"kalkulacyjny odczytałby go jako formułę)."
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_developer.py:0
+msgid "%(field)s: wrong format (%(hint)s)."
+msgstr "%(field)s: nieprawidłowy format (%(hint)s)."
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_unit.py:0
+msgid "%(unit)s: %(field)s cannot be negative."
+msgstr "%(unit)s: wartość pola „%(field)s” nie może być ujemna."
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_unit.py:0
+msgid ""
+"%(unit)s: floor area %(area)s m² ≠ approved %(approved)s m², approve the "
+"price again."
+msgstr ""
+"%(unit)s: powierzchnia użytkowa %(area)s m² ≠ zatwierdzona %(approved)s m², "
+"zatwierdź cenę ponownie."
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_unit.py:0
+msgid "%(unit)s: on offer (%(state)s) but not in the register."
+msgstr "%(unit)s: jest w ofercie (%(state)s), a nie trafia do rejestru."
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_unit.py:0
+msgid ""
+"%(unit)s: price in the offer %(offer)s PLN ≠ price in the register "
+"%(register)s PLN."
+msgstr ""
+"%(unit)s: cena w ofercie %(offer)s zł ≠ cena w rejestrze %(register)s zł."
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_unit.py:0
+msgid ""
+"%(unit)s: stage “%(stage)s” has no open escrow account, the unit cannot go "
+"to the price register."
+msgstr ""
+"%(unit)s: etap „%(stage)s” nie ma otwartego rachunku powierniczego, lokal "
+"nie może trafić do rejestru cen."
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_unit.py:0
+msgid "%s: approval needs a price, a “from” date and the floor area."
+msgstr ""
+"%s: do zatwierdzenia potrzebne są cena, data „od” i powierzchnia użytkowa."
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_unit.py:0
+msgid ""
+"%s: change waiting for approval (the file uses the last approved price, if "
+"any)."
+msgstr ""
+"%s: zmiana czeka na zatwierdzenie (do pliku trafia ostatnia zatwierdzona "
+"cena, jeśli jest)."
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_stage.py:0
+msgid "%s: enter the description and the amount, or nothing"
+msgstr "%s: podaj opis i kwotę albo zostaw oba pola puste"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_unit.py:0
+msgid "%s: sold - it left the file; untick “in register”."
+msgstr "%s: sprzedany, nie ma go już w pliku; odznacz „w rejestrze”."
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_stage.py:0
+msgid "%s: the “from” date is missing"
+msgstr "%s: brak daty „od”"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_unit.py:0
+msgid "%s: there is no price in the offer."
+msgstr "%s: w ofercie nie ma ceny."
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_developer.py:0
+msgid "10 digits"
+msgstr "10 cyfr"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,help:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__ext_ident
+msgid "36 characters, set once. Never change it."
+msgstr "36 znaków, nadawany raz. Nigdy go nie zmieniaj."
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_developer.py:0
+msgid "9 digits"
+msgstr "9 cyfr"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,help:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__phone
+msgid "9 digits without spaces or dashes; a + sign and prefix are allowed."
+msgstr ""
+"9 cyfr bez spacji i łączników; można dodać znak + i numer kierunkowy kraju."
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_developer.py:0
+msgid "9 or 14 digits"
+msgstr "9 albo 14 cyfr"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_file.py:0
+msgid "A daily file cannot be changed: dane.gov.pl already has a copy."
+msgstr "Pliku dziennego nie można zmienić: dane.gov.pl ma już jego kopię."
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_file.py:0
+msgid "A daily file cannot be deleted."
+msgstr "Pliku dziennego nie można usunąć."
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.constraint,message:l10n_pl_housing_price_register.constraint_l10n_pl_hpr_file_day_uniq
+msgid "A file for this day already exists."
+msgstr "Plik na ten dzień już istnieje."
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_unit.py:0
+msgid ""
+"A unit with approved prices cannot move to another stage: its prices were "
+"approved for this stage, project and escrow account. Create a new unit "
+"instead."
+msgstr ""
+"Lokalu z zatwierdzonymi cenami nie można przenieść do innego etapu: jego "
+"ceny zatwierdzono dla tego etapu, inwestycji i rachunku powierniczego. "
+"Utwórz nowy lokal."
+
+#. module: l10n_pl_housing_price_register
+#: model_terms:ir.ui.view,arch_db:l10n_pl_housing_price_register.hpr_developer_view_form
+msgid "A. Identification and contact"
+msgstr "A. Dane identyfikacyjne i kontaktowe"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__message_needaction
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__message_needaction
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__message_needaction
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__message_needaction
+msgid "Action Needed"
+msgstr "Wymagana akcja"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__active
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__active
+msgid "Active"
+msgstr "Aktywne"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__activity_ids
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__activity_ids
+msgid "Activities"
+msgstr "Czynności"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__activity_exception_decoration
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Dekoracja wyjątku aktywności"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__activity_state
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__activity_state
+msgid "Activity State"
+msgstr "Stan aktywności"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__activity_type_icon
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Ikona typu aktywności"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_file__url
+msgid "Address"
+msgstr "Adres"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_price__annex_date
+msgid "Annex Date"
+msgstr "Pomieszczenia przynależne – cena od"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_price__annex_price
+msgid "Annex Price"
+msgstr "Pomieszczenia przynależne – cena"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_price__annex_ref
+msgid "Annex Ref"
+msgstr "Pomieszczenia przynależne – oznaczenie"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_price__annex_type
+msgid "Annex Type"
+msgstr "Pomieszczenia przynależne – rodzaj"
+
+#. module: l10n_pl_housing_price_register
+#: model:res.groups,name:l10n_pl_housing_price_register.group_hpr_manager
+msgid "Approval"
+msgstr "Zatwierdzanie"
+
+#. module: l10n_pl_housing_price_register
+#: model_terms:ir.ui.view,arch_db:l10n_pl_housing_price_register.hpr_developer_view_form
+msgid "Approve developer data"
+msgstr "Zatwierdź dane dewelopera"
+
+#. module: l10n_pl_housing_price_register
+#: model_terms:ir.ui.view,arch_db:l10n_pl_housing_price_register.hpr_stage_view_form
+#: model_terms:ir.ui.view,arch_db:l10n_pl_housing_price_register.hpr_unit_view_form
+msgid "Approve price"
+msgstr "Zatwierdź cenę"
+
+#. module: l10n_pl_housing_price_register
+#: model_terms:ir.ui.view,arch_db:l10n_pl_housing_price_register.hpr_project_view_form
+msgid "Approve project data"
+msgstr "Zatwierdź dane inwestycji"
+
+#. module: l10n_pl_housing_price_register
+#: model_terms:ir.ui.view,arch_db:l10n_pl_housing_price_register.hpr_stage_view_form
+msgid "Approve stage data"
+msgstr "Zatwierdź dane etapu"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_approval_mixin__approved
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__approved
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__approved
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__approved
+#: model_terms:ir.ui.view,arch_db:l10n_pl_housing_price_register.hpr_developer_view_form
+msgid "Approved"
+msgstr "Zatwierdzone"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_approval_mixin__approved_on
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__approved_on
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_price__approved_on
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__approved_on
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__approved_on
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__approved_on
+msgid "Approved On"
+msgstr "Data zatwierdzenia"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_approval_mixin__approved_snapshot
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__approved_snapshot
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__approved_snapshot
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__approved_snapshot
+msgid "Approved Snapshot"
+msgstr "Zatwierdzona migawka"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_approval_mixin__approved_by_id
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__approved_by_id
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_price__approved_by_id
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__approved_by_id
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__approved_by_id
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__approved_by_id
+msgid "Approved by"
+msgstr "Zatwierdził(a)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.actions.act_window,name:l10n_pl_housing_price_register.hpr_price_action
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__price_ids
+#: model:ir.ui.menu,name:l10n_pl_housing_price_register.menu_hpr_price
+#: model_terms:ir.ui.view,arch_db:l10n_pl_housing_price_register.hpr_unit_view_form
+msgid "Approved prices"
+msgstr "Zatwierdzone ceny"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__annex_price
+msgid "Appurtenant rooms - price (G3)"
+msgstr "Pomieszczenia przynależne – cena (G3)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__annex_date
+msgid "Appurtenant rooms - price from (G4)"
+msgstr "Pomieszczenia przynależne – cena od (G4)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__annex_ref
+msgid "Appurtenant rooms - reference (G2)"
+msgstr "Pomieszczenia przynależne – oznaczenie (G2)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__annex_type
+msgid "Appurtenant rooms - type (G1)"
+msgstr "Pomieszczenia przynależne – rodzaj (G1)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model,name:l10n_pl_housing_price_register.model_ir_attachment
+msgid "Attachment"
+msgstr "Załącznik"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__message_attachment_count
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__message_attachment_count
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__message_attachment_count
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__message_attachment_count
+msgid "Attachment Count"
+msgstr "Liczba załączników"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields.selection,name:l10n_pl_housing_price_register.selection__l10n_pl_hpr_unit__offer_state__available
+msgid "Available"
+msgstr "Dostępny"
+
+#. module: l10n_pl_housing_price_register
+#: model_terms:ir.ui.view,arch_db:l10n_pl_housing_price_register.hpr_developer_view_form
+msgid "B. Registered office"
+msgstr "B. Siedziba"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__escrow_bank
+msgid "Bank"
+msgstr "Bank"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__seat_house_no
+msgid "Building number (B6)"
+msgstr "Numer nieruchomości (B6)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__sales_house_no
+msgid "Building number (C6)"
+msgstr "Numer nieruchomości (C6)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__site_house_no
+msgid "Building number (D6)"
+msgstr "Numer nieruchomości (D6)"
+
+#. module: l10n_pl_housing_price_register
+#: model_terms:ir.ui.view,arch_db:l10n_pl_housing_price_register.hpr_developer_view_form
+msgid "C. Sales office"
+msgstr "C. Lokal, w którym prowadzona jest sprzedaż"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__ceidg
+msgid "CEIDG (A4)"
+msgstr "CEIDG (A4)"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_approval_mixin.py:0
+msgid ""
+"Cannot approve “%(name)s”:\n"
+"%(errors)s"
+msgstr ""
+"Nie można zatwierdzić „%(name)s”:\n"
+"%(errors)s"
+
+#. module: l10n_pl_housing_price_register
+#: model_terms:ir.ui.view,arch_db:l10n_pl_housing_price_register.hpr_project_view_form
+msgid "Check issues"
+msgstr "Sprawdź rozbieżności"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__seat_city
+msgid "City (B4)"
+msgstr "Miejscowość (B4)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__sales_city
+msgid "City (C4)"
+msgstr "Miejscowość (C4)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__site_city
+msgid "City (D4)"
+msgstr "Miejscowość (D4)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__company_id
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_file__company_id
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_price__company_id
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__company_id
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__company_id
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__company_id
+msgid "Company"
+msgstr "Firma"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__name
+msgid "Company name (A1)"
+msgstr "Firma dewelopera (A1)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_file__attachment_id
+msgid "Content"
+msgstr "Zawartość"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__seat_county
+msgid "County (B2)"
+msgstr "Powiat (B2)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__sales_county
+msgid "County (C2)"
+msgstr "Powiat (C2)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__site_county
+msgid "County (D2)"
+msgstr "Powiat (D2)"
+
+#. module: l10n_pl_housing_price_register
+#: model_terms:ir.ui.view,arch_db:l10n_pl_housing_price_register.hpr_project_view_form
+msgid "Create today's file"
+msgstr "Utwórz dzisiejszy plik"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__create_uid
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_file__create_uid
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_price__create_uid
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__create_uid
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__create_uid
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__create_uid
+msgid "Created by"
+msgstr "Utworzył(a)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__create_date
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_file__create_date
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_price__create_date
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__create_date
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__create_date
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__create_date
+msgid "Created on"
+msgstr "Data utworzenia"
+
+#. module: l10n_pl_housing_price_register
+#: model_terms:ir.ui.view,arch_db:l10n_pl_housing_price_register.hpr_project_view_form
+msgid "D. Project location"
+msgstr "D. Lokalizacja przedsięwzięcia"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.actions.act_window,name:l10n_pl_housing_price_register.hpr_file_action
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__file_ids
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__file_ids
+#: model:ir.ui.menu,name:l10n_pl_housing_price_register.menu_hpr_file
+#: model_terms:ir.ui.view,arch_db:l10n_pl_housing_price_register.hpr_project_view_form
+msgid "Daily files"
+msgstr "Pliki dzienne"
+
+#. module: l10n_pl_housing_price_register
+#: model_terms:ir.ui.view,arch_db:l10n_pl_housing_price_register.hpr_project_view_form
+msgid "Data is not sent"
+msgstr "Dane nie są wysyłane"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__sending
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__sending_active
+#: model_terms:ir.ui.view,arch_db:l10n_pl_housing_price_register.hpr_project_view_form
+#: model_terms:ir.ui.view,arch_db:l10n_pl_housing_price_register.hpr_stage_view_form
+msgid "Data is sent"
+msgstr "Dane są wysyłane"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__ext_ident
+msgid "Dataset identifier (extIdent)"
+msgstr "Identyfikator zbioru (extIdent)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_file__day
+msgid "Day"
+msgstr "Dzień"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_file__developer_id
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__developer_id
+msgid "Developer"
+msgstr "Deweloper"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_project.py:0
+msgid ""
+"Developer data (A-C) changed or not approved; the file uses the last "
+"approved version."
+msgstr ""
+"Dane dewelopera (A–C) zmienione albo niezatwierdzone; do pliku trafia "
+"ostatnia zatwierdzona wersja."
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.actions.act_window,name:l10n_pl_housing_price_register.hpr_developer_action
+#: model:ir.ui.menu,name:l10n_pl_housing_price_register.menu_hpr_developer
+msgid "Developers"
+msgstr "Deweloperzy"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_ir_attachment__display_name
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_approval_mixin__display_name
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__display_name
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_file__display_name
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_price__display_name
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__display_name
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__display_name
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__display_name
+msgid "Display Name"
+msgstr "Nazwa wyświetlana"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,help:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__part_type
+msgid ""
+"E.g. a share in an internal road, if it is sold with the unit and is not "
+"included in the unit price."
+msgstr ""
+"Np. udział w drodze wewnętrznej, jeśli jest przedmiotem umowy i nie wchodzi "
+"w cenę lokalu."
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__email
+msgid "Email (A8)"
+msgstr "E-mail (A8)"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_developer.py:0
+msgid "Email: wrong format."
+msgstr "E-mail: nieprawidłowy format."
+
+#. module: l10n_pl_housing_price_register
+#: model_terms:ir.ui.view,arch_db:l10n_pl_housing_price_register.hpr_stage_view_form
+msgid "Escrow account and prospectus"
+msgstr "Rachunek powierniczy i prospekt"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__escrow_account
+msgid "Escrow account number"
+msgstr "Numer rachunku powierniczego"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__escrow_open
+msgid "Escrow account open"
+msgstr "Rachunek powierniczy otwarty"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__escrow_date
+msgid "Escrow account since"
+msgstr "Rachunek powierniczy od"
+
+#. module: l10n_pl_housing_price_register
+#: model_terms:ir.ui.view,arch_db:l10n_pl_housing_price_register.hpr_stage_view_form
+msgid "F. Part of the property outside the unit price"
+msgstr "F. Część nieruchomości poza ceną lokalu"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_file__name
+msgid "File"
+msgstr "Plik"
+
+#. module: l10n_pl_housing_price_register
+#: model_terms:ir.ui.view,arch_db:l10n_pl_housing_price_register.hpr_developer_view_form
+msgid "Fill from company"
+msgstr "Uzupełnij z danych firmy"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_price__area
+msgid "Floor area (m²)"
+msgstr "Powierzchnia użytkowa (m²)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__message_follower_ids
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__message_follower_ids
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__message_follower_ids
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__message_follower_ids
+msgid "Followers"
+msgstr "Obserwujący"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__message_partner_ids
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__message_partner_ids
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__message_partner_ids
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Obserwujący (partnerzy)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,help:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__activity_type_icon
+#: model:ir.model.fields,help:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Ikona Font awesome np. fa-tasks"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,help:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__name
+msgid "Full company name as in the National Court Register (KRS)."
+msgstr "Pełna nazwa firmy jak w Krajowym Rejestrze Sądowym (KRS)."
+
+#. module: l10n_pl_housing_price_register
+#: model_terms:ir.ui.view,arch_db:l10n_pl_housing_price_register.hpr_developer_view_form
+msgid "Full company name from KRS"
+msgstr "Pełna nazwa firmy z KRS"
+
+#. module: l10n_pl_housing_price_register
+#: model_terms:ir.ui.view,arch_db:l10n_pl_housing_price_register.hpr_unit_view_form
+msgid "G. Appurtenant rooms"
+msgstr "G. Pomieszczenia przynależne"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,help:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__responsible_id
+msgid "Gets activities about inconsistencies and missing daily files."
+msgstr ""
+"Dostaje aktywności dotyczące rozbieżności i brakujących plików dziennych."
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_price__price
+msgid "Gross price"
+msgstr "Cena brutto"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__price
+msgid "Gross price (E5)"
+msgstr "Cena brutto (E5)"
+
+#. module: l10n_pl_housing_price_register
+#: model_terms:ir.ui.view,arch_db:l10n_pl_housing_price_register.hpr_stage_view_form
+msgid "H, I. Rights and other payments"
+msgstr "H, I. Prawa i inne świadczenia"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__has_message
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__has_message
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__has_message
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__has_message
+msgid "Has Message"
+msgstr "Ma wiadomość"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.module.category,name:l10n_pl_housing_price_register.module_category_hpr
+#: model:res.groups.privilege,name:l10n_pl_housing_price_register.res_groups_privilege_hpr
+msgid "Housing price register"
+msgstr "Rejestr cen mieszkań"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model,name:l10n_pl_housing_price_register.model_l10n_pl_hpr_approval_mixin
+msgid "Housing price register - approval"
+msgstr "Rejestr cen mieszkań – zatwierdzanie"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model,name:l10n_pl_housing_price_register.model_l10n_pl_hpr_price
+msgid "Housing price register - approved price"
+msgstr "Rejestr cen mieszkań – zatwierdzona cena"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model,name:l10n_pl_housing_price_register.model_l10n_pl_hpr_file
+msgid "Housing price register - daily file"
+msgstr "Rejestr cen mieszkań – plik dzienny"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model,name:l10n_pl_housing_price_register.model_l10n_pl_hpr_developer
+msgid "Housing price register - developer"
+msgstr "Rejestr cen mieszkań – deweloper"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model,name:l10n_pl_housing_price_register.model_l10n_pl_hpr_project
+msgid "Housing price register - development project"
+msgstr "Rejestr cen mieszkań – inwestycja"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model,name:l10n_pl_housing_price_register.model_l10n_pl_hpr_stage
+msgid "Housing price register - stage"
+msgstr "Rejestr cen mieszkań – etap"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model,name:l10n_pl_housing_price_register.model_l10n_pl_hpr_unit
+msgid "Housing price register - unit"
+msgstr "Rejestr cen mieszkań – lokal"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.actions.server,name:l10n_pl_housing_price_register.ir_cron_hpr_ir_actions_server
+msgid "Housing price register: daily file and issues"
+msgstr "Rejestr cen mieszkań: plik dzienny i rozbieżności"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__sales_contact_method
+msgid "How buyers contact you (C10)"
+msgstr "Sposób kontaktu nabywcy z deweloperem (C10)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_ir_attachment__id
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_approval_mixin__id
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__id
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_file__id
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_price__id
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__id
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__id
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__id
+msgid "ID"
+msgstr "ID"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__activity_exception_icon
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__activity_exception_icon
+msgid "Icon"
+msgstr "Ikona"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,help:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__activity_exception_icon
+#: model:ir.model.fields,help:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Ikona wskazująca na wyjątek aktywności."
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,help:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__message_needaction
+#: model:ir.model.fields,help:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__message_needaction
+#: model:ir.model.fields,help:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__message_needaction
+#: model:ir.model.fields,help:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Jeśli zaznaczone, nowe wiadomości wymagają twojej uwagi."
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,help:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__message_has_error
+#: model:ir.model.fields,help:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__message_has_error
+#: model:ir.model.fields,help:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__message_has_error
+#: model:ir.model.fields,help:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+"Jeśli zaznaczone, niektóre wiadomości napotkały błędy podczas doręczenia."
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_price__in_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__in_register
+msgid "In Register"
+msgstr "W rejestrze"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__in_register_count
+msgid "In register"
+msgstr "W rejestrze"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__message_is_follower
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__message_is_follower
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__message_is_follower
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__message_is_follower
+msgid "Is Follower"
+msgstr "Jest obserwatorem"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__issue
+msgid "Issue"
+msgstr "Rozbieżność"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__issues
+msgid "Issues"
+msgstr "Rozbieżności"
+
+#. module: l10n_pl_housing_price_register
+#: model_terms:ir.ui.view,arch_db:l10n_pl_housing_price_register.hpr_project_view_form
+msgid "Issues ("
+msgstr "Rozbieżności ("
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__issues_key
+msgid "Issues Key"
+msgstr "Klucz rozbieżności"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__issues_checked_on
+msgid "Issues checked on"
+msgstr "Data sprawdzenia rozbieżności"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__krs
+msgid "KRS (A3)"
+msgstr "KRS (A3)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__write_uid
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_file__write_uid
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_price__write_uid
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__write_uid
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__write_uid
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__write_uid
+msgid "Last Updated by"
+msgstr "Ostatnio aktualizowane przez"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__write_date
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_file__write_date
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_price__write_date
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__write_date
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__write_date
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__write_date
+msgid "Last Updated on"
+msgstr "Data ostatniej aktualizacji"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__last_file_id
+msgid "Last file"
+msgstr "Ostatni plik"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__legal_form
+msgid "Legal form (A2)"
+msgstr "Forma prawna (A2)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_file__md5
+msgid "MD5"
+msgstr "MD5"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__message_has_error
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__message_has_error
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__message_has_error
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__message_has_error
+msgid "Message Delivery error"
+msgstr "Błąd doręczenia wiadomości"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__message_ids
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__message_ids
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__message_ids
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__message_ids
+msgid "Messages"
+msgstr "Wiadomości"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__missing_file_alarm_on
+msgid "Missing file alarm given on"
+msgstr "Data alarmu o braku pliku"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_developer.py:0
+#: code:addons/l10n_pl_housing_price_register/models/hpr_project.py:0
+msgid "Missing required fields: %s"
+msgstr "Nie wypełniono wymaganych pól: %s"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__seat_municipality
+msgid "Municipality (B3)"
+msgstr "Gmina (B3)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__sales_municipality
+msgid "Municipality (C3)"
+msgstr "Gmina (C3)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__site_municipality
+msgid "Municipality (D3)"
+msgstr "Gmina (D3)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__my_activity_date_deadline
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Ostateczny termin moich aktywności"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__nip
+msgid "NIP (A5)"
+msgstr "NIP (A5)"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_developer.py:0
+msgid "NIP: wrong check digit."
+msgstr "NIP: nieprawidłowa cyfra kontrolna."
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__name
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__name
+msgid "Name"
+msgstr "Nazwa"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__activity_date_deadline
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Termin kolejnej aktywności"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__activity_summary
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__activity_summary
+msgid "Next Activity Summary"
+msgstr "Podsumowanie kolejnej aktywności"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__activity_type_id
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__activity_type_id
+msgid "Next Activity Type"
+msgstr "Typ następnej aktywności"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_project.py:0
+msgid ""
+"No price register file was created today, so dane.gov.pl gets no data. "
+"Reasons:"
+msgstr ""
+"Dziś nie powstał plik do rejestru cen, więc dane.gov.pl nie dostanie danych."
+" Powody:"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_project.py:0
+msgid ""
+"No stage of this project sends data (escrow account, prospectus and the "
+"switch are all needed)."
+msgstr ""
+"Żaden etap tej inwestycji nie wysyła danych (potrzebne są rachunek "
+"powierniczy, prospekt i włączona wysyłka)."
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_project.py:0
+msgid ""
+"No unit goes to the file:\n"
+"%s"
+msgstr ""
+"Do pliku nie trafia żaden lokal:\n"
+"%s"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_project.py:0
+msgid "Not included (marked “in register”):"
+msgstr "Nie trafiają do pliku (zaznaczone „w rejestrze”):"
+
+#. module: l10n_pl_housing_price_register
+#: model_terms:ir.ui.view,arch_db:l10n_pl_housing_price_register.hpr_stage_view_form
+msgid "Not sent"
+msgstr "Dane nie są wysyłane"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_price__name
+msgid "Number"
+msgstr "Numer"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__name
+msgid "Number (E2)"
+msgstr "Numer (E2)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__message_needaction_counter
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__message_needaction_counter
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__message_needaction_counter
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Liczba akcji"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__message_has_error_counter
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__message_has_error_counter
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__message_has_error_counter
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__message_has_error_counter
+msgid "Number of errors"
+msgstr "Liczba błędów"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__issue_count
+msgid "Number of issues"
+msgstr "Liczba rozbieżności"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,help:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__message_needaction_counter
+#: model:ir.model.fields,help:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__message_needaction_counter
+#: model:ir.model.fields,help:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__message_needaction_counter
+#: model:ir.model.fields,help:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Liczba wiadomości wymagających akcji"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,help:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__message_has_error_counter
+#: model:ir.model.fields,help:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__message_has_error_counter
+#: model:ir.model.fields,help:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__message_has_error_counter
+#: model:ir.model.fields,help:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Liczba wiadomości z błędami przy doręczeniu"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__offer_state
+msgid "Offer State"
+msgstr "Stan w ofercie"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_approval_mixin.py:0
+msgid ""
+"Only a person can approve data for the price register, with the button in "
+"Odoo."
+msgstr ""
+"Dane do rejestru cen może zatwierdzić tylko człowiek, przyciskiem w Odoo."
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,help:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__site_house_no
+msgid "Only if a number was assigned."
+msgstr "Tylko jeśli nadano numer porządkowy."
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_approval_mixin.py:0
+msgid ""
+"Only members of the group “Housing price register: Approval” can do this."
+msgstr ""
+"Może to zrobić tylko członek grupy „Rejestr cen mieszkań: Zatwierdzanie”."
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,help:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__total_price
+msgid ""
+"Only when the offer shows a total price with the parts, rights and other "
+"payments of art. 19a."
+msgstr ""
+"Tylko gdy oferta podaje cenę łączną z częściami nieruchomości, prawami i "
+"innymi świadczeniami z art. 19a."
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,help:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__product_id
+msgid ""
+"Optional. The sales price of the product (with taxes) is compared with the "
+"price in the register."
+msgstr ""
+"Opcjonalnie. Cena sprzedaży produktu (brutto) jest porównywana z ceną w "
+"rejestrze."
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__other_desc
+msgid "Other payments of the buyer (I1)"
+msgstr "Inne świadczenia pieniężne nabywcy (I1)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__other_date
+msgid "Other payments of the buyer - from (I3)"
+msgstr "Inne świadczenia pieniężne nabywcy – od (I3)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__other_value
+msgid "Other payments of the buyer - value (I2)"
+msgstr "Inne świadczenia pieniężne nabywcy – wartość (I2)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__sales_other_locations
+msgid "Other sales locations (C9)"
+msgstr "Dodatkowe lokalizacje sprzedaży (C9)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,help:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__dataset_url
+msgid ""
+"Page with information about the dataset, e.g. the price list on the project "
+"website."
+msgstr "Strona z informacjami o zbiorze, np. cennik na stronie inwestycji."
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,help:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__slug
+msgid ""
+"Part of the file addresses, e.g. green-hill. Do not change it after the "
+"first file: dane.gov.pl requires addresses that never change."
+msgstr ""
+"Część adresu plików, np. zielone-wzgorze. Nie zmieniaj po pierwszym pliku: "
+"dane.gov.pl wymaga adresów, które się nie zmieniają."
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,help:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__slug
+msgid ""
+"Part of the file name, e.g. phase-2. Do not change it after the first file."
+msgstr "Część nazwy pliku, np. etap-2. Nie zmieniaj po pierwszym pliku."
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__part_price
+msgid "Part of the property - gross price (F3)"
+msgstr "Część nieruchomości – cena brutto (F3)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__part_date
+msgid "Part of the property - price from (F4)"
+msgstr "Część nieruchomości – cena od (F4)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__part_ref
+msgid "Part of the property - reference (F2)"
+msgstr "Część nieruchomości – oznaczenie (F2)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__part_type
+msgid "Part of the property - type (F1)"
+msgstr "Część nieruchomości – rodzaj (F1)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__phone
+msgid "Phone (A7)"
+msgstr "Telefon (A7)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__seat_zip
+msgid "Postal code (B8)"
+msgstr "Kod pocztowy (B8)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__sales_zip
+msgid "Postal code (C8)"
+msgstr "Kod pocztowy (C8)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__site_zip
+msgid "Postal code (D7)"
+msgstr "Kod pocztowy (D7)"
+
+#. module: l10n_pl_housing_price_register
+#: model_terms:ir.ui.view,arch_db:l10n_pl_housing_price_register.hpr_project_view_form
+msgid "Preview CSV file"
+msgstr "Pokaż podgląd pliku CSV"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_project.py:0
+msgid "Price"
+msgstr "Cena"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields.selection,name:l10n_pl_housing_price_register.selection__l10n_pl_hpr_unit__state__approved
+msgid "Price approved"
+msgstr "Cena zatwierdzona"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__offer_price
+msgid "Price in the offer"
+msgstr "Cena w ofercie"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__dataset_url
+msgid "Price list page"
+msgstr "Strona z cennikiem"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_developer.py:0
+msgid "Price list page: URL starting with http(s)://."
+msgstr "Strona z cennikiem: podaj adres zaczynający się od http(s)://."
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_project.py:0
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_price__price_m2
+msgid "Price per m²"
+msgstr "Cena za m²"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__price_m2
+msgid "Price per m² (E3)"
+msgstr "Cena za m² (E3)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.ui.menu,name:l10n_pl_housing_price_register.menu_hpr_root
+msgid "Price register"
+msgstr "Rejestr cen"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_project.py:0
+msgid "Price register file for %(day)s: %(count)s units (%(units)s)."
+msgstr "Plik do rejestru cen na %(day)s, lokali: %(count)s (%(units)s)."
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_project.py:0
+msgid "Price register: %s issues to check"
+msgstr "Rejestr cen: rozbieżności do sprawdzenia (%s)"
+
+#. module: l10n_pl_housing_price_register
+#: model:mail.activity.type,name:l10n_pl_housing_price_register.mail_activity_type_hpr_issue
+msgid "Price register: issues"
+msgstr "Rejestr cen: rozbieżności"
+
+#. module: l10n_pl_housing_price_register
+#: model:mail.activity.type,name:l10n_pl_housing_price_register.mail_activity_type_hpr_missing_file
+msgid "Price register: no daily file"
+msgstr "Rejestr cen: brak pliku dziennego"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_project.py:0
+msgid "Price register: no file for %s"
+msgstr "Rejestr cen: brak pliku na %s"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__state
+msgid "Price status"
+msgstr "Stan ceny"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__date_from
+msgid "Price valid from (E4/E6)"
+msgstr "Cena obowiązuje od (E4/E6)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__product_id
+msgid "Product"
+msgstr "Produkt"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_file__project_id
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__project_id
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__project_id
+msgid "Project"
+msgstr "Inwestycja"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_project.py:0
+msgid ""
+"Project data (D) changed or not approved; the file uses the last approved "
+"version."
+msgstr ""
+"Dane inwestycji (D) zmienione albo niezatwierdzone; do pliku trafia ostatnia"
+" zatwierdzona wersja."
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_project.py:0
+msgid "Project postal code: format NN-NNN."
+msgstr "Kod pocztowy inwestycji: format NN-NNN."
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__project_ids
+#: model:ir.ui.menu,name:l10n_pl_housing_price_register.menu_hpr_project
+#: model_terms:ir.ui.view,arch_db:l10n_pl_housing_price_register.hpr_developer_view_form
+msgid "Projects"
+msgstr "Inwestycje"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.actions.act_window,name:l10n_pl_housing_price_register.hpr_project_action
+msgid "Projects in the price register"
+msgstr "Inwestycje w rejestrze cen"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__property_type
+msgid "Property type (E1)"
+msgstr "Rodzaj nieruchomości (E1)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__prospectus_issues
+msgid "Prospectus Issues"
+msgstr "Problemy z prospektem"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__prospectus_url
+msgid "Prospectus URL (J1)"
+msgstr "Adres prospektu (J1)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__prospectus_checked_on
+msgid "Prospectuses checked on"
+msgstr "Data sprawdzenia prospektów"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__regon
+msgid "REGON (A6)"
+msgstr "REGON (A6)"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_developer.py:0
+msgid "REGON: wrong check digit."
+msgstr "REGON: nieprawidłowa cyfra kontrolna."
+
+#. module: l10n_pl_housing_price_register
+#: model:res.groups,name:l10n_pl_housing_price_register.group_hpr_user
+msgid "Read"
+msgstr "Podgląd"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields.selection,name:l10n_pl_housing_price_register.selection__l10n_pl_hpr_unit__offer_state__reserved
+msgid "Reserved"
+msgstr "Zarezerwowany"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields.selection,name:l10n_pl_housing_price_register.selection__l10n_pl_hpr_stage__property_type__flat
+msgid "Residential unit"
+msgstr "Lokal mieszkalny"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_file__ext_ident
+msgid "Resource identifier (extIdent)"
+msgstr "Identyfikator zasobu (extIdent)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__responsible_id
+msgid "Responsible"
+msgstr "Odpowiedzialny"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__activity_user_id
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__activity_user_id
+msgid "Responsible User"
+msgstr "Użytkownik odpowiedzialny"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__rights_desc
+msgid "Rights needed to use the unit (H1)"
+msgstr "Prawa niezbędne do korzystania z lokalu (H1)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__rights_value
+msgid "Rights needed to use the unit - value (H2)"
+msgstr "Prawa niezbędne do korzystania z lokalu – wartość (H2)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__rights_date
+msgid "Rights needed to use the unit - value from (H3)"
+msgstr "Prawa niezbędne do korzystania z lokalu – wartość od (H3)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,help:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__offer_price
+msgid "Sales price of the product with taxes - the price the buyer sees."
+msgstr "Cena sprzedaży produktu brutto, czyli cena, którą widzi nabywca."
+
+#. module: l10n_pl_housing_price_register
+#: model:res.groups,comment:l10n_pl_housing_price_register.group_hpr_user
+msgid ""
+"Sees what goes to the price register, the daily files and the issues of "
+"their companies. Changes nothing."
+msgstr ""
+"Widzi, co trafia do rejestru cen, pliki dzienne i rozbieżności w swoich "
+"firmach. Niczego nie zmienia."
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__sending_enabled
+msgid "Sending enabled"
+msgstr "Wysyłka włączona"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__sending_reason
+msgid "Sending status"
+msgstr "Stan wysyłki"
+
+#. module: l10n_pl_housing_price_register
+#: model_terms:ir.ui.view,arch_db:l10n_pl_housing_price_register.hpr_stage_view_form
+msgid "Sending to the register"
+msgstr "Wysyłka do rejestru"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__sequence
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__sequence
+msgid "Sequence"
+msgstr "Sekwencja"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_developer.py:0
+msgid ""
+"Set the system parameter l10n_pl_housing_price_register.base_url (or freeze "
+"web.base.url): daily files keep their address forever."
+msgstr ""
+"Ustaw parametr systemowy l10n_pl_housing_price_register.base_url (albo "
+"zablokuj zmianę web.base.url): pliki dzienne zachowują swój adres na zawsze."
+
+#. module: l10n_pl_housing_price_register
+#: model:res.groups,comment:l10n_pl_housing_price_register.group_hpr_manager
+msgid "Sets up stages and prices, approves data and prices, turns sending on."
+msgstr "Wprowadza etapy i ceny, zatwierdza dane i ceny, włącza wysyłkę."
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields.selection,name:l10n_pl_housing_price_register.selection__l10n_pl_hpr_stage__property_type__house
+msgid "Single-family house"
+msgstr "Dom jednorodzinny"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields.selection,name:l10n_pl_housing_price_register.selection__l10n_pl_hpr_unit__offer_state__sold
+msgid "Sold"
+msgstr "Sprzedany"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,help:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__offer_state
+msgid "Sold units (developer agreement signed) leave the file at once."
+msgstr "Lokal sprzedany (podpisana umowa deweloperska) od razu znika z pliku."
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__stage_id
+msgid "Stage"
+msgstr "Etap"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_project.py:0
+msgid ""
+"Stage “%(stage)s”: %(count)s units are marked “in register”, but the stage "
+"sends no data (%(reason)s)."
+msgstr ""
+"Etap „%(stage)s”: są lokale zaznaczone „w rejestrze” (%(count)s), a etap nie"
+" wysyła danych (%(reason)s)."
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_stage.py:0
+msgid "Stage “%(stage)s”: %(field)s cannot be negative."
+msgstr "Etap „%(stage)s”: wartość pola „%(field)s” nie może być ujemna."
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_project.py:0
+msgid "Stage “%(stage)s”: prospectus does not respond (%(code)s) - %(url)s"
+msgstr "Etap „%(stage)s”: prospekt nie odpowiada (%(code)s) – %(url)s"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_project.py:0
+msgid "Stage “%s”: data changed, waiting for approval."
+msgstr "Etap „%s”: dane zmienione, czekają na zatwierdzenie."
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_stage.py:0
+msgid ""
+"Stage “%s”: sending can be enabled only with an open escrow account and a "
+"prospectus."
+msgstr ""
+"Etap „%s”: wysyłkę można włączyć dopiero przy otwartym rachunku powierniczym"
+" i podanym prospekcie."
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_stage.py:0
+msgid ""
+"Stage “%s”: with an open escrow account enter its number, bank and date."
+msgstr ""
+"Etap „%s”: przy otwartym rachunku powierniczym podaj jego numer, bank i "
+"datę."
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_stage.py:0
+msgid "Stage “%s”: without an escrow account no unit can be “in register”."
+msgstr ""
+"Etap „%s”: bez rachunku powierniczego żaden lokal nie może być „w "
+"rejestrze”."
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.actions.act_window,name:l10n_pl_housing_price_register.hpr_stage_action
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__stage_ids
+#: model:ir.ui.menu,name:l10n_pl_housing_price_register.menu_hpr_stage
+#: model_terms:ir.ui.view,arch_db:l10n_pl_housing_price_register.hpr_project_view_form
+msgid "Stages"
+msgstr "Etapy"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,help:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__activity_state
+#: model:ir.model.fields,help:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Status na podstawie czynności\n"
+"Zaległe: Termin już minął\n"
+"Dzisiaj: Data czynności przypada na dzisiaj\n"
+"Zaplanowane: Przyszłe czynności."
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__seat_street
+msgid "Street (B5)"
+msgstr "Ulica (B5)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__sales_street
+msgid "Street (C5)"
+msgstr "Ulica (C5)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__site_street
+msgid "Street (D5)"
+msgstr "Ulica (D5)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_file__structure_version
+msgid "Structure"
+msgstr "Struktura"
+
+#. module: l10n_pl_housing_price_register
+#: model_terms:ir.ui.view,arch_db:l10n_pl_housing_price_register.hpr_unit_view_form
+msgid "Take price from offer"
+msgstr "Pobierz cenę z oferty"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_project.py:0
+msgid "The URL name cannot change after the first file."
+msgstr "Nazwy w adresie nie można zmienić po pierwszym pliku."
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_developer.py:0
+msgid ""
+"The URL name cannot change after the first file: dane.gov.pl already has "
+"these addresses."
+msgstr ""
+"Nazwy w adresie nie można zmienić po pierwszym pliku: dane.gov.pl ma już te "
+"adresy."
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_developer.py:0
+msgid "The URL name is required."
+msgstr "Nazwa w adresie jest wymagana."
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_developer.py:0
+msgid "The URL name “%s” is reserved."
+msgstr "Nazwa w adresie „%s” jest zarezerwowana."
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_developer.py:0
+msgid ""
+"The company cannot change after the first file: the files belong to it."
+msgstr "Po pierwszym pliku nie można zmienić firmy: pliki do niej należą."
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/ir_attachment.py:0
+msgid "The content of a daily price register file cannot change."
+msgstr "Zawartości pliku dziennego rejestru cen nie można zmienić."
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_developer.py:0
+msgid "The dataset identifier cannot change."
+msgstr "Identyfikatora zbioru nie można zmienić."
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_project.py:0
+msgid ""
+"The developer cannot change after the first file: the file addresses contain"
+" its URL name."
+msgstr ""
+"Po pierwszym pliku nie można zmienić dewelopera: jego nazwa w adresie jest "
+"częścią adresów plików."
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_price.py:0
+msgid "The history of approved prices cannot be changed."
+msgstr "Historii zatwierdzonych cen nie można zmienić."
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_price.py:0
+msgid "The history of approved prices cannot be deleted."
+msgstr "Historii zatwierdzonych cen nie można usunąć."
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_stage.py:0
+msgid ""
+"The project of a stage cannot change after the first file or the first "
+"approved price: its units would appear in the file of another project "
+"without approval."
+msgstr ""
+"Po pierwszym pliku albo pierwszej zatwierdzonej cenie nie można zmienić "
+"inwestycji etapu: jego lokale trafiłyby bez zatwierdzenia do pliku innej "
+"inwestycji."
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_stage.py:0
+msgid "The prospectus URL must start with https:// and contain no spaces."
+msgstr ""
+"Adres prospektu musi zaczynać się od https:// i nie może zawierać spacji."
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_developer.py:0
+msgid ""
+"The public address %s is not a public https address; dane.gov.pl accepts "
+"only https."
+msgstr ""
+"Adres %s nie jest publicznym adresem https; dane.gov.pl przyjmuje tylko "
+"https."
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.constraint,message:l10n_pl_housing_price_register.constraint_l10n_pl_hpr_project_slug_uniq
+msgid "This URL name is already taken for this developer."
+msgstr "Ta nazwa w adresie jest już zajęta u tego dewelopera."
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.constraint,message:l10n_pl_housing_price_register.constraint_l10n_pl_hpr_developer_slug_uniq
+msgid "This URL name is already taken."
+msgstr "Ta nazwa w adresie jest już zajęta."
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.constraint,message:l10n_pl_housing_price_register.constraint_l10n_pl_hpr_developer_company_uniq
+msgid "This company already has a price register."
+msgstr "Ta firma ma już swój rejestr cen."
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.constraint,message:l10n_pl_housing_price_register.constraint_l10n_pl_hpr_unit_name_uniq
+msgid "This unit number already exists in the project."
+msgstr "Lokal o tym numerze już jest w tej inwestycji."
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields.selection,name:l10n_pl_housing_price_register.selection__l10n_pl_hpr_unit__state__draft
+#: model_terms:ir.ui.view,arch_db:l10n_pl_housing_price_register.hpr_developer_view_form
+msgid "To approve"
+msgstr "Do zatwierdzenia"
+
+#. module: l10n_pl_housing_price_register
+#: model_terms:ir.ui.view,arch_db:l10n_pl_housing_price_register.hpr_project_view_form
+msgid "Today's file"
+msgstr "Dzisiejszy plik"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_project.py:0
+msgid "Today's file contains %s units (approved data):"
+msgstr "Lokale w dzisiejszym pliku (%s), zatwierdzone dane:"
+
+#. module: l10n_pl_housing_price_register
+#: model_terms:ir.ui.view,arch_db:l10n_pl_housing_price_register.hpr_project_view_form
+msgid "Today's file is created once and cannot be changed. Create it now?"
+msgstr "Plik na dziś powstaje raz i nie da się go zmienić. Utworzyć teraz?"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__preview
+msgid "Today's file preview"
+msgstr "Podgląd dzisiejszego pliku"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_price__total_price
+msgid "Total Price"
+msgstr "Cena łączna"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__total_price
+msgid "Total price (E7)"
+msgstr "Cena łączna (E7)"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_project.py:0
+msgid ""
+"Turn off sending on the stages first: an archived project gets no daily file"
+" and no alarm."
+msgstr ""
+"Najpierw wyłącz wysyłkę w etapach: dla zarchiwizowanej inwestycji nie "
+"powstaje plik dzienny ani alarm."
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_project.py:0
+msgid "Type"
+msgstr "Rodzaj"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,help:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__activity_exception_decoration
+#: model:ir.model.fields,help:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Typ wyjątku działania na rekordzie."
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__slug
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__slug
+msgid "URL name"
+msgstr "Nazwa w adresie"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_project.py:0
+msgid "URL name: lowercase letters, digits and dashes only."
+msgstr "Nazwa w adresie: tylko małe litery, cyfry i łączniki."
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_developer.py:0
+msgid "URL starting with http(s)://"
+msgstr "adres zaczynający się od http(s)://"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_project.py:0
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_price__unit_id
+msgid "Unit"
+msgstr "Lokal"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__unit_count
+msgid "Unit count"
+msgstr "Liczba lokali"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__seat_flat_no
+msgid "Unit number (B7)"
+msgstr "Numer lokalu (B7)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__sales_flat_no
+msgid "Unit number (C7)"
+msgstr "Numer lokalu (C7)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_file__record_count
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__unit_ids
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__unit_ids
+#: model_terms:ir.ui.view,arch_db:l10n_pl_housing_price_register.hpr_stage_view_form
+msgid "Units"
+msgstr "Lokale"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.actions.act_window,name:l10n_pl_housing_price_register.hpr_unit_action
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_file__units
+#: model:ir.ui.menu,name:l10n_pl_housing_price_register.menu_hpr_unit
+msgid "Units and prices"
+msgstr "Lokale i ceny"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__units_in_file
+msgid "Units in today's file"
+msgstr "Lokale w dzisiejszym pliku"
+
+#. module: l10n_pl_housing_price_register
+#: model_terms:ir.ui.view,arch_db:l10n_pl_housing_price_register.hpr_project_view_kanban
+msgid "Units in today's file:"
+msgstr "Lokale w dzisiejszym pliku:"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_unit__area
+msgid "Usable floor area (m²)"
+msgstr "Powierzchnia użytkowa (m²)"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_project.py:0
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_price__date_from
+msgid "Valid from"
+msgstr "Obowiązuje od"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__seat_state
+msgid "Voivodeship (B1)"
+msgstr "Województwo (B1)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__sales_state
+msgid "Voivodeship (C1)"
+msgstr "Województwo (C1)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_project__site_state
+msgid "Voivodeship (D1)"
+msgstr "Województwo (D1)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__website
+msgid "Website (A9)"
+msgstr "Strona internetowa (A9)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,help:l10n_pl_housing_price_register.field_l10n_pl_hpr_stage__escrow_open
+msgid ""
+"Without an open housing escrow account no unit of this stage goes to the "
+"register. Requires the account number, bank and date."
+msgstr ""
+"Bez otwartego mieszkaniowego rachunku powierniczego żaden lokal tego etapu "
+"nie trafia do rejestru. Podaj numer rachunku, bank i datę."
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__md5_url
+msgid "XML checksum (MD5)"
+msgstr "Suma kontrolna XML (MD5)"
+
+#. module: l10n_pl_housing_price_register
+#: model:ir.model.fields,field_description:l10n_pl_housing_price_register.field_l10n_pl_hpr_developer__xml_url
+msgid "XML for dane.gov.pl"
+msgstr "XML dla dane.gov.pl"
+
+#. module: l10n_pl_housing_price_register
+#: model_terms:ir.ui.view,arch_db:l10n_pl_housing_price_register.hpr_project_view_form
+msgid "checked on"
+msgstr "sprawdzono"
+
+#. module: l10n_pl_housing_price_register
+#: model_terms:ir.ui.view,arch_db:l10n_pl_housing_price_register.hpr_developer_view_form
+msgid "dane.gov.pl"
+msgstr "dane.gov.pl"
+
+#. module: l10n_pl_housing_price_register
+#: model_terms:ir.ui.view,arch_db:l10n_pl_housing_price_register.hpr_project_view_kanban
+msgid "data is not sent"
+msgstr "dane nie są wysyłane"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_stage.py:0
+#: model_terms:ir.ui.view,arch_db:l10n_pl_housing_price_register.hpr_project_view_kanban
+#: model_terms:ir.ui.view,arch_db:l10n_pl_housing_price_register.hpr_stage_view_kanban
+msgid "data is sent"
+msgstr "dane są wysyłane"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_project.py:0
+msgid "developer or project data has never been approved"
+msgstr "dane dewelopera albo inwestycji nie zostały jeszcze zatwierdzone"
+
+#. module: l10n_pl_housing_price_register
+#: model_terms:ir.ui.view,arch_db:l10n_pl_housing_price_register.hpr_stage_view_kanban
+msgid "in register:"
+msgstr "w rejestrze:"
+
+#. module: l10n_pl_housing_price_register
+#: model_terms:ir.ui.view,arch_db:l10n_pl_housing_price_register.hpr_project_view_kanban
+msgid "issues:"
+msgstr "rozbieżności:"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_developer.py:0
+msgid "lowercase letters, digits and dashes"
+msgstr "małe litery, cyfry i łączniki"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_project.py:0
+msgid "missing required fields: %s"
+msgstr "nie wypełniono wymaganych pól: %s"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_project.py:0
+msgid "no approved price valid on %s"
+msgstr "brak zatwierdzonej ceny obowiązującej w dniu %s"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_stage.py:0
+msgid "no escrow account"
+msgstr "brak rachunku powierniczego"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_stage.py:0
+msgid "no prospectus"
+msgstr "brak prospektu"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_project.py:0
+msgid "no units"
+msgstr "brak lokali"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_stage.py:0
+msgid "not a public https address"
+msgstr "adres nie jest publicznym adresem https"
+
+#. module: l10n_pl_housing_price_register
+#: model_terms:ir.ui.view,arch_db:l10n_pl_housing_price_register.hpr_stage_view_kanban
+msgid "not sent"
+msgstr "dane nie są wysyłane"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_stage.py:0
+msgid "other payments"
+msgstr "inne świadczenia"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_stage.py:0
+msgid "part of the property"
+msgstr "część nieruchomości"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_project.py:0
+msgid "prospectus"
+msgstr "prospekt"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_stage.py:0
+msgid "prospectus URL is missing"
+msgstr "brak adresu prospektu"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_stage.py:0
+msgid "rights needed to use the unit"
+msgstr "prawa niezbędne do korzystania z lokalu"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_project.py:0
+msgid "sold, no longer on offer"
+msgstr "sprzedany, już nie w ofercie"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_project.py:0
+msgid "stage “%(stage)s”: %(reason)s"
+msgstr "etap „%(stage)s”: %(reason)s"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_project.py:0
+msgid "stage “%s”: escrow account and prospectus never approved"
+msgstr ""
+"etap „%s”: rachunek powierniczy i prospekt nie zostały jeszcze zatwierdzone"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_stage.py:0
+msgid "switch is off"
+msgstr "wysyłka wyłączona"
+
+#. module: l10n_pl_housing_price_register
+#. odoo-python
+#: code:addons/l10n_pl_housing_price_register/models/hpr_stage.py:0
+msgid "too many redirects"
+msgstr "za dużo przekierowań"

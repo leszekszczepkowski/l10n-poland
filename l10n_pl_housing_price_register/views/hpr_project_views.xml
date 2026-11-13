@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Leszek Szczepkowski
+     License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl). -->
+<odoo>
+    <record id="hpr_project_view_kanban" model="ir.ui.view">
+        <field name="model">l10n_pl.hpr.project</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <field name="sending" />
+                <field name="issue_count" />
+                <field name="units_in_file" />
+                <templates>
+                    <t t-name="card">
+                        <div class="d-flex justify-content-between">
+                            <field name="name" class="fw-bold fs-5" />
+                            <span
+                                t-if="record.sending.raw_value"
+                                class="badge text-bg-success"
+                            >data is sent</span>
+                            <span
+                                t-else=""
+                                class="badge text-bg-danger"
+                            >data is not sent</span>
+                        </div>
+                        <field name="developer_id" class="text-muted" />
+                        <div class="mt-2">
+                            <span>Units in today's file: <field
+                                name="units_in_file"
+                            /></span>
+                            <span
+                                t-if="record.issue_count.raw_value"
+                                class="badge text-bg-warning ms-2"
+                            >issues: <field name="issue_count" /></span>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+    <record id="hpr_project_view_list" model="ir.ui.view">
+        <field name="model">l10n_pl.hpr.project</field>
+        <field name="arch" type="xml">
+            <list decoration-success="sending" decoration-danger="not sending">
+                <field name="name" />
+                <field name="developer_id" />
+                <field name="sending" />
+                <field name="units_in_file" />
+                <field name="issue_count" />
+                <field name="last_file_id" />
+            </list>
+        </field>
+    </record>
+    <record id="hpr_project_view_form" model="ir.ui.view">
+        <field name="model">l10n_pl.hpr.project</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button
+                        name="action_approve"
+                        type="object"
+                        string="Approve project data"
+                        class="btn-primary"
+                        invisible="approved"
+                        groups="l10n_pl_housing_price_register.group_hpr_manager"
+                    />
+                    <button
+                        name="action_check_issues"
+                        type="object"
+                        string="Check issues"
+                        groups="l10n_pl_housing_price_register.group_hpr_manager"
+                    />
+                    <button
+                        name="action_preview_csv"
+                        type="object"
+                        string="Preview CSV file"
+                    />
+                    <button
+                        name="action_generate_today"
+                        type="object"
+                        string="Create today's file"
+                        groups="l10n_pl_housing_price_register.group_hpr_manager"
+                        confirm="Today's file is created once and cannot be changed. Create it now?"
+                    />
+                </header>
+                <sheet>
+                    <widget
+                        name="web_ribbon"
+                        title="Data is sent"
+                        bg_color="text-bg-success"
+                        invisible="not sending"
+                    />
+                    <widget
+                        name="web_ribbon"
+                        title="Data is not sent"
+                        bg_color="text-bg-danger"
+                        invisible="sending"
+                    />
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" />
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="developer_id" />
+                            <field name="company_id" invisible="1" />
+                            <field name="slug" />
+                            <field name="approved" />
+                            <field name="units_in_file" />
+                            <field name="last_file_id" />
+                        </group>
+                        <group string="D. Project location">
+                            <field name="site_state" />
+                            <field name="site_county" />
+                            <field name="site_municipality" />
+                            <field name="site_city" />
+                            <field name="site_street" />
+                            <field name="site_house_no" />
+                            <field name="site_zip" />
+                        </group>
+                    </group>
+                    <div
+                        class="alert alert-warning"
+                        role="alert"
+                        invisible="not issue_count"
+                    >
+                        <b>Issues (<field name="issue_count" class="d-inline" />)</b>
+                        <field name="issues" nolabel="1" />
+                        <small class="text-muted">checked on <field
+                            name="issues_checked_on"
+                            class="d-inline"
+                        /></small>
+                    </div>
+                    <notebook>
+                        <page string="Stages" name="stages">
+                            <field name="stage_ids">
+                                <list
+                                    decoration-success="sending_active"
+                                    decoration-danger="not sending_active"
+                                >
+                                    <field name="sequence" widget="handle" />
+                                    <field name="name" />
+                                    <field name="escrow_open" />
+                                    <field name="sending_active" />
+                                    <field name="sending_reason" />
+                                    <field name="in_register_count" />
+                                    <field name="unit_count" />
+                                    <field name="approved" />
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Today's file" name="preview">
+                            <field name="preview" nolabel="1" />
+                        </page>
+                        <page string="Daily files" name="files">
+                            <field name="file_ids" />
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter />
+            </form>
+        </field>
+    </record>
+    <record id="hpr_project_action" model="ir.actions.act_window">
+        <field name="name">Projects in the price register</field>
+        <field name="res_model">l10n_pl.hpr.project</field>
+        <field name="view_mode">kanban,list,form</field>
+    </record>
+</odoo>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Leszek Szczepkowski
+     License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl). -->
+<odoo>
+    <record id="hpr_stage_view_kanban" model="ir.ui.view">
+        <field name="model">l10n_pl.hpr.stage</field>
+        <field name="arch" type="xml">
+            <kanban default_group_by="project_id">
+                <field name="sending_active" />
+                <templates>
+                    <t t-name="card">
+                        <div
+                            t-attf-class="border-start border-4 ps-2 #{record.sending_active.raw_value ? 'border-success' : 'border-danger'}"
+                        >
+                            <field name="name" class="fw-bold" />
+                            <div>
+                                <span
+                                    t-if="record.sending_active.raw_value"
+                                    class="badge text-bg-success"
+                                >data is sent</span>
+                                <span
+                                    t-else=""
+                                    class="badge text-bg-danger"
+                                >not sent</span>
+                            </div>
+                            <field name="sending_reason" class="text-muted small" />
+                            <div class="small">in register: <field
+                                name="in_register_count"
+                            /> / <field name="unit_count" /></div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+    <record id="hpr_stage_view_list" model="ir.ui.view">
+        <field name="model">l10n_pl.hpr.stage</field>
+        <field name="arch" type="xml">
+            <list
+                decoration-success="sending_active"
+                decoration-danger="not sending_active"
+            >
+                <field name="project_id" />
+                <field name="name" />
+                <field name="escrow_open" />
+                <field name="sending_active" />
+                <field name="sending_reason" />
+                <field name="in_register_count" />
+            </list>
+        </field>
+    </record>
+    <record id="hpr_stage_view_form" model="ir.ui.view">
+        <field name="model">l10n_pl.hpr.stage</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button
+                        name="action_approve"
+                        type="object"
+                        string="Approve stage data"
+                        class="btn-primary"
+                        invisible="approved"
+                        groups="l10n_pl_housing_price_register.group_hpr_manager"
+                    />
+                </header>
+                <sheet>
+                    <widget
+                        name="web_ribbon"
+                        title="Data is sent"
+                        bg_color="text-bg-success"
+                        invisible="not sending_active"
+                    />
+                    <widget
+                        name="web_ribbon"
+                        title="Not sent"
+                        bg_color="text-bg-danger"
+                        invisible="sending_active"
+                    />
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" />
+                        </h1>
+                    </div>
+                    <group>
+                        <group string="Sending to the register">
+                            <field name="project_id" />
+                            <field name="company_id" invisible="1" />
+                            <field name="sending_enabled" widget="boolean_toggle" />
+                            <field name="sending_reason" />
+                            <field name="approved" />
+                            <field name="property_type" />
+                        </group>
+                        <group string="Escrow account and prospectus">
+                            <field name="escrow_open" />
+                            <field name="escrow_account" />
+                            <field name="escrow_bank" />
+                            <field name="escrow_date" />
+                            <field name="prospectus_url" widget="url" />
+                        </group>
+                        <group string="F. Part of the property outside the unit price">
+                            <field name="part_type" />
+                            <field name="part_ref" />
+                            <field name="part_price" />
+                            <field name="part_date" />
+                        </group>
+                        <group string="H, I. Rights and other payments">
+                            <field name="rights_desc" />
+                            <field name="rights_value" />
+                            <field name="rights_date" />
+                            <field name="other_desc" />
+                            <field name="other_value" />
+                            <field name="other_date" />
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Units" name="units">
+                            <field name="unit_ids" context="{'default_stage_id': id}">
+                                <list
+                                    editable="bottom"
+                                    decoration-success="in_register and state == 'approved'"
+                                    decoration-warning="in_register and state != 'approved'"
+                                    decoration-muted="not in_register"
+                                >
+                                    <field name="company_id" column_invisible="1" />
+                                    <field name="name" />
+                                    <field name="product_id" optional="hide" />
+                                    <field name="offer_state" />
+                                    <field name="area" />
+                                    <field name="in_register" widget="boolean_toggle" />
+                                    <field name="price" />
+                                    <field name="price_m2" />
+                                    <field name="date_from" />
+                                    <field name="offer_price" optional="show" />
+                                    <field
+                                        name="state"
+                                        widget="badge"
+                                        decoration-success="state == 'approved'"
+                                        decoration-warning="state == 'draft'"
+                                    />
+                                    <button
+                                        name="action_approve"
+                                        type="object"
+                                        string="Approve price"
+                                        icon="fa-check"
+                                        invisible="state == 'approved'"
+                                        groups="l10n_pl_housing_price_register.group_hpr_manager"
+                                    />
+                                    <field name="issue" optional="show" />
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter />
+            </form>
+        </field>
+    </record>
+    <record id="hpr_stage_action" model="ir.actions.act_window">
+        <field name="name">Stages</field>
+        <field name="res_model">l10n_pl.hpr.stage</field>
+        <field name="view_mode">kanban,list,form</field>
+    </record>
+</odoo>

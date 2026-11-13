@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Leszek Szczepkowski
+     License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl). -->
+<odoo noupdate="1">
+    <!-- Hourly: issues and today's file (created once, at the first run after
+         midnight Polish time when there is something to send). -->
+    <record id="ir_cron_hpr" model="ir.cron">
+        <field name="name">Housing price register: daily file and issues</field>
+        <field name="model_id" ref="model_l10n_pl_hpr_developer" />
+        <field name="state">code</field>
+        <field name="code">model._cron_price_register()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">hours</field>
+        <field name="active" eval="True" />
+    </record>
+</odoo>

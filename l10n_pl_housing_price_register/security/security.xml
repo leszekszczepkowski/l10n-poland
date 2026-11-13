@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Leszek Szczepkowski
+     License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl). -->
+<odoo>
+    <record id="module_category_hpr" model="ir.module.category">
+        <field name="name">Housing price register</field>
+        <field name="sequence">62</field>
+    </record>
+    <record id="res_groups_privilege_hpr" model="res.groups.privilege">
+        <field name="name">Housing price register</field>
+        <field name="category_id" ref="module_category_hpr" />
+    </record>
+    <record id="group_hpr_user" model="res.groups">
+        <field name="name">Read</field>
+        <field name="privilege_id" ref="res_groups_privilege_hpr" />
+        <field
+            name="comment"
+        >Sees what goes to the price register, the daily files and the issues of their companies. Changes nothing.</field>
+    </record>
+    <record id="group_hpr_manager" model="res.groups">
+        <field name="name">Approval</field>
+        <field name="privilege_id" ref="res_groups_privilege_hpr" />
+        <field name="implied_ids" eval="[Command.link(ref('group_hpr_user'))]" />
+        <field
+            name="user_ids"
+            eval="[Command.link(ref('base.user_root')), Command.link(ref('base.user_admin'))]"
+        />
+        <field
+            name="comment"
+        >Sets up stages and prices, approves data and prices, turns sending on.</field>
+    </record>
+
+    <record id="rule_hpr_developer_company" model="ir.rule">
+        <field name="name">Price register - developer: user companies</field>
+        <field name="model_id" ref="model_l10n_pl_hpr_developer" />
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+    <record id="rule_hpr_project_company" model="ir.rule">
+        <field name="name">Price register - project: user companies</field>
+        <field name="model_id" ref="model_l10n_pl_hpr_project" />
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+    <record id="rule_hpr_stage_company" model="ir.rule">
+        <field name="name">Price register - stage: user companies</field>
+        <field name="model_id" ref="model_l10n_pl_hpr_stage" />
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+    <record id="rule_hpr_unit_company" model="ir.rule">
+        <field name="name">Price register - unit: user companies</field>
+        <field name="model_id" ref="model_l10n_pl_hpr_unit" />
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+    <record id="rule_hpr_price_company" model="ir.rule">
+        <field name="name">Price register - price history: user companies</field>
+        <field name="model_id" ref="model_l10n_pl_hpr_price" />
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+    <record id="rule_hpr_file_company" model="ir.rule">
+        <field name="name">Price register - daily files: user companies</field>
+        <field name="model_id" ref="model_l10n_pl_hpr_file" />
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+</odoo>

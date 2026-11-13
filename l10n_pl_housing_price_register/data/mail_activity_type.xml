@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Leszek Szczepkowski
+     License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl). -->
+<odoo noupdate="1">
+    <record id="mail_activity_type_hpr_issue" model="mail.activity.type">
+        <field name="name">Price register: issues</field>
+        <field name="icon">fa-exclamation-triangle</field>
+        <field name="res_model">l10n_pl.hpr.project</field>
+        <field name="delay_count">0</field>
+    </record>
+    <record id="mail_activity_type_hpr_missing_file" model="mail.activity.type">
+        <field name="name">Price register: no daily file</field>
+        <field name="icon">fa-file-o</field>
+        <field name="res_model">l10n_pl.hpr.project</field>
+        <field name="delay_count">0</field>
+    </record>
+</odoo>

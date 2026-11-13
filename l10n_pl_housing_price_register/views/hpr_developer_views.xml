@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Leszek Szczepkowski
+     License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl). -->
+<odoo>
+    <record id="hpr_developer_view_list" model="ir.ui.view">
+        <field name="model">l10n_pl.hpr.developer</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name" />
+                <field name="company_id" groups="base.group_multi_company" />
+                <field name="approved" widget="boolean" />
+                <field name="xml_url" widget="url" />
+            </list>
+        </field>
+    </record>
+    <record id="hpr_developer_view_form" model="ir.ui.view">
+        <field name="model">l10n_pl.hpr.developer</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button
+                        name="action_approve"
+                        type="object"
+                        string="Approve developer data"
+                        class="btn-primary"
+                        invisible="approved"
+                        groups="l10n_pl_housing_price_register.group_hpr_manager"
+                    />
+                    <button
+                        name="action_fill_from_company"
+                        type="object"
+                        string="Fill from company"
+                        groups="l10n_pl_housing_price_register.group_hpr_manager"
+                    />
+                </header>
+                <sheet>
+                    <widget
+                        name="web_ribbon"
+                        title="Approved"
+                        bg_color="text-bg-success"
+                        invisible="not approved"
+                    />
+                    <widget
+                        name="web_ribbon"
+                        title="To approve"
+                        bg_color="text-bg-danger"
+                        invisible="approved"
+                    />
+                    <field name="approved" invisible="1" />
+                    <div class="oe_title">
+                        <h1>
+                            <field
+                                name="name"
+                                placeholder="Full company name from KRS"
+                            />
+                        </h1>
+                    </div>
+                    <group>
+                        <group string="A. Identification and contact">
+                            <field name="company_id" />
+                            <field name="legal_form" />
+                            <field name="krs" />
+                            <field name="ceidg" />
+                            <field name="nip" />
+                            <field name="regon" />
+                            <field name="phone" />
+                            <field name="email" />
+                            <field name="website" />
+                        </group>
+                        <group string="B. Registered office">
+                            <field name="seat_state" />
+                            <field name="seat_county" />
+                            <field name="seat_municipality" />
+                            <field name="seat_city" />
+                            <field name="seat_street" />
+                            <field name="seat_house_no" />
+                            <field name="seat_flat_no" />
+                            <field name="seat_zip" />
+                        </group>
+                        <group string="C. Sales office">
+                            <field name="sales_state" />
+                            <field name="sales_county" />
+                            <field name="sales_municipality" />
+                            <field name="sales_city" />
+                            <field name="sales_street" />
+                            <field name="sales_house_no" />
+                            <field name="sales_flat_no" />
+                            <field name="sales_zip" />
+                            <field name="sales_other_locations" />
+                            <field name="sales_contact_method" />
+                        </group>
+                        <group string="dane.gov.pl">
+                            <field name="slug" />
+                            <field name="ext_ident" />
+                            <field name="dataset_url" widget="url" />
+                            <field name="xml_url" widget="url" />
+                            <field name="md5_url" widget="url" />
+                            <field name="responsible_id" />
+                            <field name="approved_by_id" invisible="not approved" />
+                            <field name="approved_on" invisible="not approved" />
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Projects" name="projects">
+                            <field name="project_ids" />
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter />
+            </form>
+        </field>
+    </record>
+    <record id="hpr_developer_action" model="ir.actions.act_window">
+        <field name="name">Developers</field>
+        <field name="res_model">l10n_pl.hpr.developer</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>
